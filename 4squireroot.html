@@ -1,0 +1,35 @@
+<html>
+
+<head>
+    <title>Find Squire Root</title>
+    <style>
+        .h1 {
+            text-align: center;
+            color: blue;
+        }
+        
+        .h3 {
+            text-align: center;
+            color: cornflowerblue;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>JavaScript Programs 5</h1>
+    <h3>Find Squire Root Click on button...</h3>
+    <button type="button" onclick="squireroot()" value="">Squire Root</button>
+    <h3 id="sq"></h3>
+    <script>
+        let sr;
+        let fsr;
+
+        function squireroot() {
+            sr = parseFloat(prompt(`Enter a Number for finding : `));
+            fsr = Math.sqrt(sr);
+            document.getElementById('sq').innerHTML = `Squire Roor is: ${fsr}`;
+        }
+    </script>
+</body>
+
+</html>

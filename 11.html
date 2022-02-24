@@ -1,0 +1,26 @@
+<html>
+
+<head>
+    <title>
+        HTML PAGE
+    </title>
+    <style>
+
+    </style>
+
+</head>
+
+<body>
+    <h1>Rangom number is:</h1>
+    <p id="ran"></p>
+    <button onclick="document.getElementById('ran').innerHTML=ran(1000,9999)">Generate</button>
+    <script>
+        function ran(min, max) {
+            x = Math.floor(Math.random() * (max - min + 1) + min);
+            return x;
+        }
+        console.log(ran(100, 999));
+    </script>
+</body>
+
+</html>

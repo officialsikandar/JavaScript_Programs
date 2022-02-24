@@ -1,0 +1,49 @@
+<html>
+
+<head>
+    <title>
+        JavaScript Objects
+    </title>
+    <style>
+        .h1 {
+            color: darkblue;
+            text-align: center;
+        }
+        
+        .h3 {
+            color: darkcyan;
+            text-align: center;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1 class="h1">JavaScript Program 8</h1>
+    <h3 class="h3">Object use as a Structure </h3>
+    <button type="button" onclick="emp()">Get Full Name</button>
+    <button type="reset" onclick="document.getElementById('get').innerHTML='';">Reset</button>
+    <p id="get"></p>
+    <script>
+        function emp() {
+            fname = prompt(`Enter First Name: `);
+            lname = prompt(`Enter Last Name: `);
+            age = prompt(`Enter Age: `);
+            bg = prompt(`Enter Blood Group: `);
+            const employee = {
+                Firstname: `${fname}`,
+                Lastname: `${lname}`,
+                Age: `${age}`,
+                Blood: `${bg}`,
+                Fullname: function() {
+                    return this.Firstname + " " + this.Lastname;
+                }
+            };
+            document.getElementById('get').innerHTML = employee.Firstname + "<br>" + employee.Lastname + "<br>" + employee.Age + "<br>" + employee.Blood + "<br>" + employee.Fullname();
+
+        }
+    </script>
+
+</body>
+
+</html>

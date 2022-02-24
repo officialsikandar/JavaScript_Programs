@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Page Title</title>
+    <!-- Scripting  -->
+    <script>
+        function removebg() {
+            document.getElementById("img1").src = "bless.png";
+        }
+
+        function undo() {
+            document.getElementById("img1").src = "wback.jpg";
+        }
+
+        function add() {
+            document.getElementById("add").innerHTML = 2 + 4;
+        }
+    </script>
+    <!-- Scripting  -->
+</head>
+
+<body>
+
+    <h1>JavaScript Program 1</h1>
+    <p id="js1">Remover Backgroud form an Image</p>
+    <button id="js2" type="button" onclick='document.getElementById("js1").innerHTML = "Hello JS1"'>click</button>
+
+    <button type="button" onclick='document.getElementById("js2").innerHTML = "Hello sikadar"'>Press</button> -->
+
+    <img id="img1" src="wback.jpg" height="500px">
+
+    <button type="button" onclick='removebg()'>Remove Background</button>
+    <button type="button" onclick='undo()'>Undo</button>
+
+
+    <!-- <h3>2</h3>
+    <h3>4</h3>
+    <button type="button" onclick="add()">Add = </button>
+    <p>Add : <p id="add"></p></p> -->
+
+</body>
+
+</html>

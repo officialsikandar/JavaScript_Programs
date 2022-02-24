@@ -1,0 +1,46 @@
+<html>
+
+<head>
+    <title>
+        HTML PAGE
+    </title>
+    <style>
+        .h1 {
+            color: darkblue;
+            text-align: center;
+        }
+        
+        .h3 {
+            color: darkcyan;
+            text-align: center;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1 class="h1">JavaScript Program 10</h1>
+    <h3 class="h3">Array with Loop </h3>
+    <p id="stin"></p>
+    <button type="button" onclick="print()">Create List</button>
+    <script>
+        function print() {
+            let result = "Created List";
+            let size = parseFloat(prompt('Enter size of Array: '));
+            var list = new Array(size);
+            for (let i = 0; i < size; i++) {
+                list[i] = prompt(`Enter element`);
+            }
+            let ul = "<ul>";
+            for (let i = 0; i < size; i++) {
+                result += "<li>" + list[i] + "</li>";
+            }
+            ul += "</ul>";
+            document.getElementById(`stin`).innerHTML = result;
+
+
+        }
+    </script>
+</body>
+
+</html>

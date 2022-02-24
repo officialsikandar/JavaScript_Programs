@@ -1,0 +1,51 @@
+<html>
+
+<head>
+    <title>
+        String Operations
+    </title>
+    <style>
+        .h1 {
+            color: darkblue;
+            text-align: center;
+        }
+        
+        .h3 {
+            color: darkcyan;
+            text-align: center;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1 class="h1">JavaScript Program 9</h1>
+    <h3 class="h3">String Operations </h3>
+    <p id="stin"></p>
+    <button type="button" onclick="print()">Get Your String</button>
+    <button type="button" onclick="slice()">String Cuttor</button>
+    <button type="button" onclick="sliceout()">Slice Your String</button>
+    <button type="reset" onclick="document.getElementById('stin').innerHTML='';">Reset</button>
+    <p id="get"></p>
+    <script>
+        let st = prompt(`Enter Your String:  `);
+        let s1, s2;
+
+        function print() {
+            document.getElementById('stin').innerHTML = `${st}`;
+        }
+
+        function slice() {
+            s1 = prompt(`Enter Your Start String no.: `);
+            s2 = prompt(`Enter Your End String no.: `)
+            document.getElementById('get').innerHTML = st.slice(s1, s2);
+
+        }
+
+        function sliceout() {
+
+        }
+    </script>
+</body>
+
+</html>

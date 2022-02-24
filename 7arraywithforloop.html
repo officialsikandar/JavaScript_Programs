@@ -1,0 +1,49 @@
+<html>
+
+<head>
+    <title>Find Squire Root</title>
+    <style>
+        .h1 {
+            color: darkblue;
+            text-align: center;
+        }
+        
+        .h3 {
+            color: darkcyan;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="h1">JavaScript Programs 7</h1>
+    <h3 class="h3">Input array value for user using for loop</h3>
+    <p id=""></p>
+    <button type="button" onclick="input()" value="">Enter Values</button>
+    <h3 id="bs"></h3>
+    <!-- <button type="button" onclick="output()" value="">View Output</button> -->
+    <script>
+        let num, n;
+
+        function input() {
+            n = prompt(`Enter Size of Array...`);
+            num = new Array(n);
+            for (var i = 0; i < n; i++) {
+                num[i] = prompt(`Enter the Value of Array }`);
+            }
+            console.log(num);
+            let result = "";
+            for (var i = 0; i < n; i++) {
+                result = result + " " + num[i];
+            }
+            document.getElementById('bs').innerHTML = result;
+
+        }
+
+        // function output() {
+
+        // }
+    </script>
+</body>
+
+</html>

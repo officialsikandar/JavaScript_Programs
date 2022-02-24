@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>Marksheet of Student</title>
+    </head>
+    <body>
+        <script>
+            var m1,m2,m3;
+            var total,per;            
+            function tot()
+            {
+
+            m1 = parseFloat(prompt("Enter English Marks:"));
+            m2 = parseFloat(prompt("Enter Maths Marks:"));
+            m3 = parseFloat(prompt("Enter Science Marks:"));
+            total =m1 + m2 + m3 ;
+            per=total/3;
+            }
+            
+            
+            
+            tot();
+            document.write(`English Marks:  ${m1}<br>`);
+            document.write(`Maths Marks :  ${m2}<br>`);
+            document.write(`Science Marks :  ${m3}<br>`);
+            document.write(`Total of all Subjects is :  ${total}<br>`);
+            document.write(`Your Persentage is :  ${per}<br>`);
+        </script>
+    </body>
+</html>

@@ -1,0 +1,32 @@
+<html>
+
+<head>
+    <title>Find Squire Root</title>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <h1>JavaScript Programs 6</h1>
+    <h3>Swap numbers Click on button...</h3>
+
+    <button type="button" onclick="swap()" value="">SWAP</button>
+    <h3 id="bs"></h3>
+    <h3 id="sq"></h3>
+    <script>
+        let n1, n2;
+
+        function swap() {
+            n1 = parseFloat(prompt(`Enter 1st Number for Swaping... `));
+            n2 = parseFloat(prompt(`Enter 2nd Number for Swaping... `));
+            document.getElementById('bs').innerHTML = `Befour Swaping no. is: ${n1} , ${n2}`;
+            n1 = n1 + n2;
+            n2 = n1 - n2;
+            n1 = n1 - n2;
+            document.getElementById('sq').innerHTML = `After Swaping no. is: ${n1} , ${n2}`;
+        }
+    </script>
+</body>
+
+</html>

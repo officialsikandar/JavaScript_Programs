@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="demo"></p>
+
+    <script>
+        const arr = new Set();
+        arr.add("10");
+        arr.add("20");
+        arr.add("30");
+        arr.add("10");
+        arr.add("400");
+        arr.add("30");
+        console.log(arr.size);
+        // let text = "";
+        // arr.forEach(fun);
+
+        // function fun(value) {
+        //     text += value + "<br>";
+        // }
+        // document.getElementById("demo").innerHTML = text;
+        arr.delete('10');
+        var txt = "";
+        arr.forEach(myfun);
+
+        function myfun(value) {
+            txt += value + "<br>";
+        }
+        document.getElementById('demo').innerHTML = txt;
+        console.log(arr.has('400'));
+        console.log(arr.values());
+    </script>
+</body>
+
+</html>

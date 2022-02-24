@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Calculator</title>
+<!-- Scripting  -->
+<!-- <script>
+    function print()
+    {
+        var name="yelo";
+        document.write(name);
+        document.write("fname").innerHTML;
+        document.write("lname").innerHTML;
+    }    
+    
+</script> -->
+<!-- Scripting  -->
+</head>
+<body>
+<script>
+// program for a simple calculator
+let result;
+
+// take the operator input
+const operator = prompt('Enter operator ( either +, -, * or / ): ');
+
+// take the operand input
+const number1 = parseFloat(prompt('Enter first number: '));
+const number2 = parseFloat(prompt('Enter second number: '));
+
+switch(operator) {
+    case '+':
+         result = number1 + number2;
+        document.write(`${number1} + ${number2} = ${result}`);
+        break;
+
+    case '-':
+         result = number1 - number2;
+        window.alert(`${number1} - ${number2} = ${result}`);
+        break;
+
+    case '*':
+         result = number1 * number2;
+        console.log(`${number1} * ${number2} = ${result}`);
+        break;
+
+    case '/':
+         result = number1 / number2;
+        console.log(`${number1} / ${number2} = ${result}`);
+        break;
+
+    default:
+        console.log('Invalid operator');
+        break;
+}
+</script>
+</body>
+</html>
