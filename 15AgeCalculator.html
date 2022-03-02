@@ -1,0 +1,68 @@
+<html>
+
+<body>
+    <h1>Hello World</h1>
+    <script>
+        var year_born = prompt("Please enter your Year of birth:", "Type here");
+
+        function getAge(birthYear) {
+            var currentDate = new Date();
+            var currentYear = currentDate.getFullYear();
+            age = currentYear - birthYear;
+            return age;
+        }
+        calculatedAge = getAge(year_born);
+        let days = calculatedAge * 365;
+
+        //******************************************************************************************
+
+        alert("Hello, " + "you are " + calculatedAge + " years old!");
+
+
+
+        // var day;
+        // var m = prompt("Please enter your Month of birth:", "Type here");
+        // swith(m) {
+        //     case: 12
+        //     day = 333;
+        //     break;
+        //     case 11:
+        //             day = 273;
+        //         break;
+        //     case 10:
+        //             day = 333;
+        //         break;
+        //     case 09:
+        //             day = 273;
+        //         break;
+        //     case 08:
+        //             day = 333;
+        //         break;
+        //     case 07:
+        //             day = 273;
+        //         break;
+        //     case 06:
+        //             day = 333;
+        //         break;
+        //     case 05:
+        //             day = 273;
+        //         break;
+        //     case 04:
+        //             day = 333;
+        //         break;
+        //     case 03:
+        //             day = 273;
+        //         break;
+        //     case 02:
+        //             day = 333;
+        //         break;
+        //     case 01:
+        //             day = 273;
+        //         break;
+        //         default: alert('Please Enter Valid Month');
+        // };
+        // alert('Please Enter Valid Month ' + day);
+    </script>
+</body>
+
+</html>

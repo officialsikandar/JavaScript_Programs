@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Regular Expresstion</h1>
+    <h1>Syntex :- /pattern/modifiers;</h1>
+    <p id="demo"></p>
+    <button onclick="modi()">Modifiers Use!</button>
+    <button onclick="pat()">Pattern Use!</button>
+    <button onclick="mat()">MetaCharactors Use!</button>
+    <button onclick="sear()">Seach Word!</button>
+    <button onclick="rep()">Replace Word!</button>
+    <script>
+        let text = "Hello, we are Coders!!!";
+        // console.log(text);
+
+        function modi() {
+            // document.getElementById('demo').innerHTML = text.match(/coders/i);      //ignore case sencitive matching
+            // document.getElementById('demo').innerHTML = text.match(/Coders/g);      //Global find match
+            document.getElementById('demo').innerHTML = text.match(/Coders/m); //Multiline Matching 
+        }
+        let cont = "8005913597";
+
+        function pat() {
+            // document.getElementById('demo').innerHTML = cont.match(/[0-9]/g);       //find any digit range between in string
+            // document.getElementById('demo').innerHTML = text.match(/[cod]/ig);      //find any of char between the brackets
+            document.getElementById('demo').innerHTML = text.match(/[c|d]/g); //find any alternative seprator with |
+        }
+        let cst = "we are 80059 13597";
+
+        function mat() {
+            // document.getElementById('demo').innerHTML = cst.match(/\d/g);
+            // document.getElementById('demo').innerHTML = cst.match(/\s/g);
+            // document.getElementById('demo').innerHTML = cst.match(/\b80059/g);
+            document.getElementById('demo').innerHTML = cst.match(/\b80059/g);
+            // document.getElementById('demo').innerHTML = cst.match(/\u009/g);
+        }
+        //Search Function Example::::::::::::::::::::::
+        function sear() {
+            let input = prompt("Enter A String for Srearch() Function");
+            let test = prompt("Enter A Word for Srearch() Function");
+            let check = input.search(test);
+            console.log("Your String :" + input);
+            console.log("Word :" + test);
+            console.log("No. of search is :" + check);
+        }
+        //Replace Function Example::::::::::::::::::::::
+        function rep() {
+            let input = prompt("Enter A String for Replace() Function");
+            let test = prompt("Enter A Word for Replace() Function");
+            let repl = prompt("Enter Replace Word");
+            let check = input.replace(test, repl);
+            console.log("Your String :" + input);
+            console.log("Replace form :" + test);
+            console.log("Replaced with :" + repl);
+            console.log("Replaced String :" + check);
+        }
+    </script>
+</body>
+
+</html>
