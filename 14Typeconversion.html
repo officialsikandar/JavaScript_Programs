@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //Convert String to Number
+        document.write("<h3>Convert String to Number</h3>");
+        var pi = "3.14";
+
+        document.write(typeof(pi) + "<br>");
+        document.write(pi + 1 + "<br>");
+        document.write(Number(pi) + 1 + "<br>");
+        document.write(typeof(parseFloat(pi)) + "<br>");
+        document.write(parseInt(pi) + "<br>");
+        document.write(typeof(parseInt(pi)) + "<br><br><br>");
+
+        //Convert Number to String
+        document.write("<h3>Convert Number to String</h3>");
+        var demo = 12345;
+
+        document.write(typeof(demo) + "<br>");
+        document.write(String(demo) + "<br>");
+        document.write(typeof(String(demo)) + "<br>");
+        document.write(demo.toString() + "<br>");
+        document.write(typeof(demo.toString()) + "<br><br><br>");
+
+        //Convert Date to Number
+        document.write("<h3>Convert Date to Number</h3>");
+        var demo = Date();
+
+        document.write(demo + "<br>");
+        document.write(typeof(Date()) + "<br>");
+
+        document.write(Number(demo) + "<br>");
+        document.write(typeof(Number(demo)) + "<br><br><br>");
+
+        //Convert Date to String
+        document.write("<h3>Convert Date to String</h3>");
+        var demo = Date();
+
+        document.write(demo + "<br>");
+        document.write(typeof(Date()) + "<br>");
+        document.write(String(demo) + "<br>");
+        document.write("++" + typeof(demo.toString()) + "<br><br><br>");
+
+        //Convert Boolean to Nummber
+        document.write("<h3>Convert Boolean to Number</h3>");
+        var bool = true;
+        document.write(bool + "<br>");
+        document.write(typeof(bool) + "<br>");
+        document.write(Number(bool) + "<br>");
+        document.write(typeof(Number(bool)) + "<br><br>");
+        var bool = false;
+        document.write(bool + "<br>");
+        document.write(typeof(bool) + "<br>");
+        document.write(Number(bool) + "<br>");
+        document.write(typeof(Number(bool)) + "<br>");
+
+        //Convert Boolean to String
+        document.write("<h3>Convert Boolean to string</h3>");
+        var bool = true;
+        document.write(bool + "<br>");
+        document.write(typeof(bool) + "<br>");
+        document.write(String(bool) + "<br>");
+        document.write(typeof(String(bool)) + "<br><br>");
+        var bool = false;
+        document.write(bool + "<br>");
+        document.write(typeof(bool) + "<br>");
+        document.write(bool.toString() + "<br>");
+        document.write(typeof(bool.toString()) + "<br>");
+    </script>
+</body>
+
+</html>
