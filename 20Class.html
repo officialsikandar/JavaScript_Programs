@@ -1,0 +1,51 @@
+<html>
+
+<body>
+
+    <h2>JavaScript Class</h2>
+
+    <!-- <p>Find age of a Car.</p> -->
+
+    <p id="demo"></p>
+
+    <script>
+        //##########################################Simple Example##############################
+
+        // class Car {
+        //     constructor(name, year) {
+        //         this.name = name;
+        //         this.year = year;
+        //     }
+        // }
+
+        // const myCar = new Car("Ford", 2014);
+        // const myCar1 = new Car("Ford Mustang", 2022);
+        // document.getElementById("demo").innerHTML =
+        //     myCar.name + " " + myCar.year;
+
+        // demo = document.getElementById('demo');
+        // demo.innerHTML = myCar1.name + " | " + myCar1.year;
+
+        //##########################################Find Age of a Car##############################
+        let carname = prompt("Enter Your car name");
+        let carmobelyear = Number(prompt("Enter Your car model year"));
+        class Car {
+            constructor(name, year) {
+                this.name = name;
+                this.year = year;
+            }
+            age() {
+                let date = new Date();
+                let x = date.getFullYear() - this.year;
+                return x;
+
+            }
+        }
+        let mycar = new Car(carname, carmobelyear);
+        doc = document.getElementById('demo');
+        doc.innerHTML = mycar.name + " is " + mycar.age() + " year old.";
+    </script>
+
+</body>
+
+</html>
