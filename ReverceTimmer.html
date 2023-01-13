@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<body>
+<center>
+<h1 style="color:blue; font-size:3em;">Reverce Timmer</h1>
+
+
+<h1 style="color:red; font-size:5em;" id="demo"></h1>
+</center>
+<script>
+const x= 79856;
+var date = new Date(null);
+        date.setSeconds(x);
+        var hhmmssFormat = date;
+        var h = hhmmssFormat.getHours();
+        var m = hhmmssFormat.getMinutes();
+        var s = hhmmssFormat.getSeconds();
+        setInterval(() => {
+            s-=1;
+            if(s<0){
+                m-=1;
+            s=59
+            if(m<0){
+                m=59
+                h-=1;
+                if(h<0){
+                    h=0;
+                    m=0;
+                    s=0;
+                }
+            }
+            }
+             document.getElementById('demo').innerHTML = h+":"+m+":"+s;
+
+        }, 1000);
+</script>
+
+</body>
+</html>
+
+
