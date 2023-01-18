@@ -1,6 +1,6 @@
 <html>
 <body>
-    <h1 id="timer">HH:MM:SS</h1>
+    <h1 id="timer">00:00:00:00</h1>
 </body>
 <script type="text/javascript" charset="utf-8">
     var h =0;
@@ -12,7 +12,7 @@
             setInterval(()=>{
                 if(m<100){
                     ms+=1
-                    document.getElementById('timer').innerHTML = h+":"+m+":"+s+":"+ms;
+                    document.getElementById('timer').innerHTML = (h<10?"0"+h:h)+":"+(m<10?"0"+m:m)+":"+(s<10?"0"+s:s)+":"+(ms<10?"0"+ms:ms);
                 }else{
                     ms=0;
                 }
@@ -21,17 +21,17 @@
             ms=0;
             if(s<2){
             s+=1;
-                    document.getElementById('timer').innerHTML = h+":"+m+":"+s+":"+ms;
+                document.getElementById('timer').innerHTML = (h<10?"0"+h:h)+":"+(m<10?"0"+m:m)+":"+(s<10?"0"+s:s)+":"+(ms<10?"0"+ms:ms);    
         }else{
             s=0;
             if(m<2){
                 m+=1;
-                    document.getElementById('timer').innerHTML = h+":"+m+":"+s+":"+ms;
+                   document.getElementById('timer').innerHTML = (h<10?"0"+h:h)+":"+(m<10?"0"+m:m)+":"+(s<10?"0"+s:s)+":"+(ms<10?"0"+ms:ms);
             }else{
                 m=0;
                 if(h<12){
                     h+=1;
-                    document.getElementById('timer').innerHTML = h+":"+m+":"+s+":"+ms;
+                    document.getElementById('timer').innerHTML = (h<10?"0"+h:h)+":"+(m<10?"0"+m:m)+":"+(s<10?"0"+s:s)+":"+(ms<10?"0"+ms:ms);
                 }else{
                     h=0;
                 }
